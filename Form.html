@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .con1 {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3e3d0;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px #ba979733;
+            }
+
+
+        h1 {
+            border: 2px solid brown;
+            background-color: #f5a6c1;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px #230916;
+            
+            }
+            label{
+                display: inline-block;
+                margin: 10px 0 5px;
+                font-weight: bold;
+            }
+
+            .sub{
+                background-color: white;
+                padding: auto;
+                cursor: pointer;
+                font-weight:bold;
+                border-radius: 5px;
+            }
+            .sub:hover{
+                background-color:#eae8e8;
+            }
+
+            #dept:hover{
+                background-color:#eae8e8;
+            }
+            input,select{
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+    </style>
+</head>
+<body>
+    <form class="con1">
+    <h1>Student Details</h1>
+
+    <label for="name">Enter Name:</label>
+    <input type="text" name="Std_name" id="name"><br><br>
+
+    <label for="email">Enter Email:</label>
+    <input type="email" name="emailid" id="email"><br><br>
+
+    <label for="dept">Select Department:</label>
+    <select name="department" id="dept">
+        <option value="">Select</option>
+        <option value="cse">CSE</option>
+        <option value="AiDs">AIDS</option>
+        <option value="IT">IT</option>
+    </select><br><br>
+
+    <label>Select Gender:</label>
+    <input type="radio" name="std_gender" id="gender_male" value="Male"> Male
+    <input type="radio" name="std_gender" id="gender_female" value="Female"> Female<br><br>
+
+    <label>Way of Transport:</label>
+    <input type="checkbox" name="std_transport" value="College bus"> College bus
+    <input type="checkbox" name="std_transport" value="Out bus"> Out bus
+    <input type="checkbox" name="std_transport" value="Own vehicle"> Own vehicle
+    <input type="checkbox" name="std_transport" value="Hostel"> Hostel<br><br>
+<center>
+    <input type="submit" value="Submit" class="sub">
+</center>
+</form>
+</body>
+</html>

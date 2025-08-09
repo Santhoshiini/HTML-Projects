@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #f1eee6, #dcd5c5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .con1 {
+        background-color: #efe8ce;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+    }
+
+    h1 {
+        background-color: #ffe4c4;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px #d2b48c;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #deb887;
+        color: rgb(7, 7, 7);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    button:hover {
+        background-color: #d2a679;
+    }
+
+    #result {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    
+    <div class="con1">
+        <h1 id="result">CALCULATER</h1>
+        <label for="first">Number1:</label>
+        <input type="text" id="first" name="Number1">
+        <br><br>
+
+        <label for="second">Number2:</label>
+        <input type="text" id="second" name="Number2">
+        <br><br>
+
+        <!-- <label for="sym">Enter Symbol:</label>
+        <input type="text" id="sym" name="Symbol"> -->
+
+
+        <label for="sym">Select Symbol:</label>
+        <select name="Symbol" id="sym">
+            <option value=""></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+            <option value="**">**</option>
+        </select>
+        <br><br>
+        
+        <button type="button" onclick="cal()">submit</button>
+    </div>
+
+    <script>
+        function cal(){
+            let n2=parseInt(document.getElementById("first").value);
+            let n1=parseInt(document.getElementById("second").value);
+            let syms=document.getElementById("sym").value;
+
+            if(syms=="+"){
+                let sum=n1+n2;
+                console.log(sum);
+            }
+            else if(syms=="-"){
+                let sub=n1-n2;
+                console.log(sub); 
+            }
+            else if (syms=="*"){
+                let mul=n1*n2;
+                console.log(mul);
+            }
+            else if(syms=="/"){
+                let div=n1/n2;
+                console.log(div);
+            }
+            else if(syms=="%"){
+                let mod=n1%n2;
+                console.log(mod); 
+            }
+            else if(syms=="**"){
+                let expo=n1**n2;
+                console.log(expo);
+            }
+            else{
+                console.log("invalide"); 
+            } 
+        }
+    </script>
+</body>
+</html>
