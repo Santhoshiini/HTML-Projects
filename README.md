@@ -21,6 +21,7 @@ This repository contains beginner-friendly HTML projects created for learning pu
 2. Open any .html file in your browser.
 
 🛠️ Technologies Used
+
 HTML5
 
 CSS3
