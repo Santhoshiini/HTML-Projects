@@ -10,7 +10,7 @@ This repository contains beginner-friendly HTML projects created for learning pu
    - Supports addition, subtraction, multiplication, division, modulus, and exponentiation.
 
 2. **Student Details Form**  
-   - File: `Table.html`  
+   - File: `Form.html`  
    - An HTML form to collect student information such as name, email, department, gender, and transportation mode.
 
 ## 🚀 How to Run
